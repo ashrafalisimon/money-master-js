@@ -11,11 +11,73 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- header starts -->
     <header>
-       <div>
-         <h2 class="text-5xl">Monthly Pay Calculator</h2>
+       <div class="mb-8">
+         <h2 class="text-5xl font-bold text-teal-500 mt-8 text-center">Monthly Pay Calculator💰</h2>
        </div>
     </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <main >
+        <section class="px-10 grid grid-cols-2 gap-x-12 mb-8">
+            <div>
+                <img src="images/selary-calc.png" alt="">
+            </div>
+            <div class="bg-gray-200">
+                <div class="income-section">
+                    <h4 class="text-2xl text-center font-semibold mt-16 mb-8" >Income</h4>
+                    <div class="income-info flex justify-center ">
+                        <label class="w-20" class="" for=""><span class="text-xl mr-2">Income: </span></label>
+                        <input class=" p-2 rounded w-64" type="text" placeholder="Your Salary" >
+                    </div>
+                </div>
+                <div class="expenses-section">
+                    <h4 class="text-2xl text-center font-semibold mt-4 mb-8" >Expenses</h4>
+                    <div class="expenses-info">
+                        <div class="food-details mb-4 flex justify-center ">
+                            <label class="w-20" for=""><span class="text-xl mr-2">Food: </span></label>
+                            <input class=" p-2 rounded w-64" type="text" placeholder="Food Cost" >
+                        </div>
+                        <div class="rent-details mb-4 flex justify-center">
+                            <label class="w-20" for=""><span class="text-xl mr-2">Rent: </span></label>
+                            <input class=" p-2 rounded w-64" type="text" placeholder="Rent Cost" >
+                        </div>
+                        <div class="others-details mb-4 flex justify-center ">
+                            <label class="w-20" for=""><span class="text-xl mr-2">Others: </span></label>
+                            <input class=" p-2 rounded w-64" type="text" placeholder="Others Cost" >
+                        </div>
+                    </div>
+                </div>
+                <div class="calculate-btn text-center">
+                    <button class="mt -2 py-2 px-8 rounded bg-blue-400 text-white font-semibold ">Calculate</button>
+                </div>
+                <div class="total-expensive">
+                    <h4 class="text-2xl text-center font-semibold  my-4" >Total Expenses: <span> 00</span></h4>
+                </div>
+                <div class="balance">
+                    <h4 class="text-2xl text-center font-semibold my-4" >Balance: <span> 00</span></h4>
+                </div>
+                <div class="tax-details mb-4 flex justify-center ">
+                    <label class="w-16" for=""><span class="text-xl mr-2">Save: </span></label>
+                    <input class=" p-2 rounded w-32" type="text" placeholder="Others Cost" > 
+                    <span class="text-xl mx-2"> % </span>
+                    <div class="calculate-btn text-center">
+                        <button class="mt -2 py-2 px-8 rounded font-semibold bg-blue-400 text-white">Save</button>
+                    </div>
+                </div>
+                <div class="saving-amonut">
+                    <h4 class="text-2xl text-center font-semibold  my-4" >Saving Amount: <span> 00</span></h4>
+                </div>
+                <div class="remaining-balance">
+                    <h4 class="text-2xl text-center font-semibold my-4" >Remaining Balance: <span> 00</span></h4>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- main ends -->
     
 
     <!-- js -->

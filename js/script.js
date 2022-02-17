@@ -1,6 +1,6 @@
 // salary and monthly cost input
-function getInputValue( number) {
-    const input = document.getElementById(number);
+function getInputValue( inputNumber) {
+    const input = document.getElementById(inputNumber);
         const inputConvertNumber = parseInt(input.value);
         return inputConvertNumber;
 }
@@ -26,6 +26,7 @@ function getTotalCost() {
 function getTotalBalance(){
     const incomeSalary = getInputValue('income-salary');
     const totalCost = getTotalCost();
+    const messError2 = document.getElementById('error-mess-fail2');
     const messError = document.getElementById('error-mess-fail');
     if(incomeSalary>0 && totalCost>0){
         if(incomeSalary > totalCost){
@@ -35,7 +36,7 @@ function getTotalBalance(){
         return totalBalance;
         }
         else{
-            messError.style.display = 'block';
+            messError2.style.display = 'block';
         }
         
     }
@@ -50,6 +51,7 @@ function getSavingCalculate(){
     const salarySave = getInputValue('salary-save');
     const totalBalance = getTotalBalance();
     const messError = document.getElementById('error-mess-fail');
+    const messError3 = document.getElementById('error-mess-fail3');
 
     if(salarySave>0 && incomeSalary>0){
         if(salarySave < incomeSalary){
@@ -60,7 +62,7 @@ function getSavingCalculate(){
             document.getElementById('remaining-balance').innerText = remainingBalance;
         }
         else{
-            messError.style.display = 'block';
+            messError3.style.display = 'block';
         }
        
     }

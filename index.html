@@ -14,7 +14,7 @@
     <!-- header starts -->
     <header>
        <div class="sm:mb-2 md:mb-4 lg:mb-8">
-         <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-teal-500 mt-2 md:mt-4 lg:mt-8 text-center">Monthly Pay Calculator💰</h2>
+         <h2 class="text-2xl lg:text-4xl xl:text-5xl font-bold text-teal-500 mt-2 md:mt-4 lg:mt-8 text-center">Monthly Pay Calculator💰</h2>
        </div>
     </header>
     <!-- header ends -->
@@ -22,45 +22,45 @@
     <!-- main starts -->
     <main >
         <section class="px-2 md:px-6 lg:px-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:gap-x-4 lg:gap-x-8 xl:gap-x-12 md:mb-4 lg:mb-8 xl:mb-8">
-            <div class="" >
-                <img class="w-10/12 md:w-10/12 lg:w-10/12 xl:w-full"  src="images/selary-calc.png" alt="">
+            <div class="mt-2" >
+                <img class="w-full md:w-full lg:w-full xl:w-full" src="images/selary-calc.png" alt="">
             </div>
             <div class="bg-gray-200">
                 <div class="income-section">
-                    <h4 class="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center font-semibold mt-2 sm:mt-4 md:mt-8 lg:mt-16 xl:mt-16 mb-8" >Income</h4>
+                    <h4 class="text-lg md:text-lg lg:text-2xl xl:text-2xl text-center font-semibold mt-2 sm:mt-4 md:mt-8 lg:mt-16 xl:mt-16 mb-8" >Income</h4>
                     <div class="income-info flex justify-center ">
-                        <label class="w-20" class="" for=""><span class="text-base lg:text-xl text-xl mr-2">Income: </span></label>
+                        <label class="w-20" class="" for=""><span class="text-base md:text-lg lg:text-xl text-xl mr-2">Income: </span></label>
                         <input id="income-salary" class=" p-2 rounded w-64" type="text" placeholder="Your Salary" >
                     </div>
                 </div>
                 <div class="expenses-section">
-                    <h4 class="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center font-semibold mt-2 sm:mt-4 md:mt-8 lg:mt-16 xl:mt-16 mb-8" >Expenses</h4>
+                    <h4 class="text-lg md:text-lg lg:text-2xl xl:text-2xl text-center font-semibold mt-2 sm:mt-4 md:mt-8 lg:mt-8 xl:mt-16 mb-8" >Expenses</h4>
                     <div class="expenses-info">
                         <div class="food-details mb-4 flex justify-center ">
-                            <label class="w-20" for=""><span class="text-base lg:text-xl mr-2">Food: </span></label>
+                            <label class="w-20" for=""><span class="text-base md:text-lg lg:text-xl mr-2">Food: </span></label>
                             <input id="food-cost" class=" p-2 rounded w-64" type="text" placeholder="Food Cost" >
                         </div>
                         <div class="rent-details mb-4 flex justify-center">
-                            <label class="w-20" for=""><span class="text-base lg:text-xl mr-2">Rent: </span></label>
+                            <label class="w-20" for=""><span class="text-base md:text-lg lg:text-xl mr-2">Rent: </span></label>
                             <input id="rent-cost" class=" p-2 rounded w-64" type="text" placeholder="Rent Cost" >
                         </div>
                         <div class="others-details mb-4 flex justify-center ">
-                            <label class="w-20" for=""><span class="text-base lg:text-xl mr-2">Others: </span></label>
+                            <label class="w-20" for=""><span class="text-base md:text-lg lg:text-xl mr-2">Others: </span></label>
                             <input id="others-cost" class=" p-2 rounded w-64" type="text" placeholder="Others Cost" >
                         </div>
                     </div>
                 </div>
                 <div class="calculate-btn text-center">
-                    <button id="calculate-button" class="mt -2 py-2 px-8 rounded bg-blue-400 text-white font-semibold ">Calculate</button>
+                    <button id="calculate-button" class="mt -2 py-2 px-8 rounded text-lg lg:text-lg md:text-lg bg-blue-400 text-white font-semibold ">Calculate</button>
                 </div>
                 <div class="total-expensive">
-                    <h4 class="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Total Expenses: <span id="total-expenses"> 00</span></h4>
+                    <h4 class="text-lg md:text-lg lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Total Expenses: <span id="total-expenses"> 00</span></h4>
                 </div>
                 <div class="balance">
-                    <h4 class="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Balance: <span id="total-balance"> 00</span></h4>
+                    <h4 class="text-lg md:text-lg lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Balance: <span id="total-balance"> 00</span></h4>
                 </div>
                 <div class="tax-details mb-4 flex justify-center ">
-                    <label class="w-16" for=""><span class="text-xl mr-2">Save: </span></label>
+                    <label class="w-16" for=""><span class=" text-lg md:text-lg lg:text-xl xl:text-xl mr-2">Save: </span></label>
                     <input id="salary-save" class=" p-2 rounded w-32" type="text" placeholder="Saving Cost" > 
                     <span class="text-xl mx-2"> % </span>
                     <div class="calculate-btn text-center">
@@ -68,10 +68,10 @@
                     </div>
                 </div>
                 <div class="saving-amonut">
-                    <h4 class="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Saving Amount: <span id="saving-account"> 00</span></h4>
+                    <h4 class="text-lg md:text-lg lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Saving Amount: <span id="saving-account"> 00</span></h4>
                 </div>
                 <div class="remaining-balance">
-                    <h4 class="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Remaining Balance: <span id="remaining-balance"> 00</span></h4>
+                    <h4 class="text-lg md:text-lg lg:text-2xl xl:text-2xl text-center font-semibold my-2 lg:my-2 xl:my-4" >Remaining Balance: <span id="remaining-balance"> 00</span></h4>
                 </div>
 
                 <div class="error-mess">
